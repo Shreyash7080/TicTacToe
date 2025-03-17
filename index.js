@@ -132,9 +132,15 @@ function checkWin() {
         } else if (pattern[0] === 3) {
           line.css("top", "48.99%");
           line.animate({ width: "+=100%" });
+          setTimeout(() => {
+              line.css("top", "0%");
+          }, 1000);
         } else {
           line.css("top", "83.33%");
           line.animate({ width: "+=100%" });
+          setTimeout(() => {
+              line.css("top", "0%");
+          }, 1000);
         }
       }
 
